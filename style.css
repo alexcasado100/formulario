@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-image: url(images/palmeira1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+input[type='text'],
+[type='email'],
+[type='password'] {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+div {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 15px;
+  border: 2px solid black;
+  background-color: transparent;
+  font-weight: bold;
+}
+.termosLink {
+  color: darkgreen;
+  text-decoration: none;
+}
+.recuperar {
+  color: darkgreen;
+  text-decoration: none;
+  font-size: 18px;
+}
+.cadastro {
+  text-align: center;
+  font-size: 35px;
+}
+.login {
+  text-align: center;
+  font-size: 35px;
+}
+.register {
+  margin-top: 10px;
+}
+.enter {
+  margin-top: 10px;
+}
+button:hover {
+  background-color: green;
+}
+.form1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin-top: 120px;
+  border: 2px solid black;
+}
+.form2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  height: 410px;
+  margin-top: 120px;
+  border: 2px solid black;
+}
+@media (max-width: 1000px) {
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+@media (max-width: 400px) {
+  input[type='text'],
+  [type='email'],
+  [type='password'] {
+    width: 190px;
+  }
+  .form1 {
+    padding-bottom: 5px;
+  }
+  .form2 {
+    height: 440px;
+  }
+  .enter {
+    margin-top: 5px;
+  }
+}

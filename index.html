@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="form1">
+        <form method="post">
+          <h1 class="cadastro">Cadastre-se</h1>
+          <label>
+            Nome Completo <br />
+            <input
+              type="text"
+              name="nome"
+              required
+              minlength="2"
+              placeholder="Digite seu nome completo"
+            />
+          </label>
+          <label>
+            E-mail <br />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Digite seu e-mail"
+            />
+          </label>
+          <label>
+            Crie uma senha <br />
+            <input
+              type="password"
+              name="senha"
+              required
+              placeholder="Digite uma nova senha"
+            />
+          </label>
+          <label>
+            Repita a senha <br />
+            <input
+              type="password"
+              name="senha"
+              required
+              placeholder="Repita a nova senha"
+            />
+          </label>
+          <label>
+            Gênero<br /><br />
+            <input type="radio" name="genero" value="M" required />
+            Masculino
+            <input type="radio" name="genero" value="F" required />
+            Feminino
+            <input type="radio" name="genero" value="T" required />
+            Trans
+            <input type="radio" name="genero" value="O" required />
+            Outro </label
+          ><br />
+          <label>
+            <input type="checkbox" required />
+            Eu declaro que li e aceito os
+            <a href="" target="_blank" class="termosLink">termos de uso</a>.
+          </label>
+          <label>
+            <button class="register">Cadastrar</button>
+          </label>
+        </form>
+      </div>
+      <div class="form2">
+        <form method="post">
+          <h1 class="login">Faça seu Login</h1>
+          <label>
+            E-mail <br />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Digite seu e-mail"
+            />
+          </label>
+          <label>
+            Senha <br />
+            <input
+              type="password"
+              name="senha"
+              required
+              placeholder="Digite sua senha"
+            />
+          </label>
+          <label>
+            <a href="" class="recuperar">Esqueceu a senha?</a><br />
+          </label>
+          <label>
+            <button class="enter">Entrar</button>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
